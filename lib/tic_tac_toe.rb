@@ -38,6 +38,7 @@ def turn(board)
     move(board, index, current_player(board))
     display_board(board)
   else 
+    until 
     turn(board)
   end
 end
@@ -73,7 +74,7 @@ end
 
  def won?(board)
     WIN_COMBINATIONS.any? do |combo|
-          if board[combo[0]] == "X" && 
+      if  board[combo[0]] == "X" && 
           board[combo[1]] == "X" && 
           board[combo[2]] == "X" || 
           board[combo[0]] == "O" && 
