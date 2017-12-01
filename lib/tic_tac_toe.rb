@@ -81,8 +81,8 @@ end
           board[combo[1]] == "O" && 
           board[combo[2]] == "O"
           return combo
-          end
       end
+    end
   end 
   
 def full?(board)
